@@ -9,3 +9,5 @@ A code file named 'eval_source_scatter.py' generates the source plane scatters f
 In a folder named 'Image_plane_scatters', there is the code for computing image plane scatters for multiple images.
 A 'lens_rms.py' is the code to find the location of the multiple images in the image plane.
 A 'plot_result.py' is the code to plot the result rms scatters.
+
+For more details, please refer the ''.
