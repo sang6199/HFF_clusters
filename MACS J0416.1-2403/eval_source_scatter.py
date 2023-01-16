@@ -59,4 +59,4 @@ for P in range(max_m_source):
 
 print(np.sqrt(RMS_total / (max_m_source + 1)))
 plt.suptitle('Total RMS: {0:5f}\'\''.format(np.sqrt(RMS_total / (max_m_source + 1))), fontsize=30)
-plt.savefig('result_rms.pdf')
+plt.savefig('result_source_plane_rms.pdf')
