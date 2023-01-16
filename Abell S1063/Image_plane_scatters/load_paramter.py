@@ -9,4 +9,4 @@ kapmap_size = 100
 margin = 20
 padding = int(2*margin + kapmap_size)
 core_num = 20
-free_param_redshift_source = None
+free_param_redshift_source = 3, 8, 9, 16, 21, 23, 31, 32, 34, 43, 45, 46, 47, 49, 50, 51, 53, 54, 55, 56
