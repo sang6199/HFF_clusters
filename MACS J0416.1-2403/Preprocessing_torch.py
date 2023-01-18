@@ -7,7 +7,7 @@ kappamap_size = kapmap_size
 
 
 #load data from strong_lensing_data_file
-strong_lensing_data = np.loadtxt(strong_lensing_file, usecols=(1, 2, 3, 4, 5))
+strong_lensing_data = np.loadtxt(strong_lensing_file, usecols=(1, 2, 3, 4))
 strong_image_index = np.loadtxt(strong_lensing_file, usecols=0, dtype=str)
 strong_lensing_data = strong_lensing_data.T
 
