@@ -1,13 +1,16 @@
-# Strong lensing modeling of the six Hubble Frontier Fields clusters. 
+Strong lensing modeling of the six Hubble Frontier Fields clusters. 
+===================================================================
 
 We upload our results and code for computing scatters in both the source and the image planes.
 
-In each folder, there are 'result_fits.fits', 'resut_kappa_w_header.fits', 'catalog.txt' files. 
+In each folder, there are 'result_fits.fits', 'resut_kappa_w_header.fits', 'deflection_angle_w_header.fits', and 'catalog.txt' files. 
 
 A 'result_fits.fits' file is our result SL model which obtains convergence and model redshift values.
 'result_fits.fits' file has a size of (140x140 + alpha), where alpha is the number of model redshifts.
 
 A 'result_kappa_w_header.fits' file is our result SL kappa map (100x100) with WCS header. 
+
+A 'deflection_angle_w_header.fits' file is our result SL kappa map (100x100) with WCS header.
 
 A 'catalog.txt' file is the catalog file for SL reconstruction in pixel scale.
 
