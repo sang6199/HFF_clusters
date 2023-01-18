@@ -15,10 +15,9 @@ Result files from the MARS algorithm
 In each folder, there are 'result_fits.fits', 'resut_kappa_w_header.fits', 'deflection_angle_w_header.fits', and 'catalog.txt' files.  
 All kappa and deflection angle maps are scaled to D<sub>ds</sub>/D<sub>s</sub>= 1.  
 
-A 'result_fits.fits' file is our result SL model which obtains convergence and model redshift values.  
-'result_fits.fits' file has a size of (140x140 + alpha), where alpha is the number of model redshifts.  
-A 'result_kappa_w_header.fits' file is our result SL kappa map (100x100) with WCS header.   
-A 'deflection_angle_w_header.fits' file is our result deflection angle map (100x100) with WCS header.  
+A 'result_fits.fits' file is our result SL model which obtains convergence and model redshift values. The 'result_fits.fits' file has a size of (140x140 + alpha), where alpha is the number of model redshifts.  
+A 'result_kappa_w_header.fits' file is our result SL kappa map (100x100).    
+A 'deflection_angle_w_header.fits' file is our result deflection angle map (100x100) in arcsecond scale. 
 A 'catalog.txt' file is the catalog file for SL reconstruction in pixel scale.  
 
 
