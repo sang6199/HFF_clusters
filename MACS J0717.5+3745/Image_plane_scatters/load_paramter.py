@@ -1,4 +1,4 @@
-strong_lensing_file = 'MACSJ0717_catalog.txt'
+strong_lensing_file = '../MACSJ0717_catalog.txt'
 interpol_size = 4000
 cluster_z = 0.545
 x1 = 0
