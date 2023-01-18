@@ -1,4 +1,4 @@
-strong_lensing_file = 'AS1063_catalog.txt'
+strong_lensing_file = '../AS1063_catalog.txt'
 interpol_size = 3000
 cluster_z = 0.348
 x1 = 0
