@@ -13,7 +13,7 @@ We upload our results and code for computing scatters in both the source and the
 Result files from the MARS algorithm
 --------------------------------------------
 In each folder, there are 'result_fits.fits', 'resut_kappa_w_header.fits', 'deflection_angle_w_header.fits', and 'catalog.txt' files. 
-All kappa and deflection angle maps are scaled to D<sub>ds<sub>/D<sub>s<sub>=1.
+All kappa and deflection angle maps are scaled to D<sub>ds/D<sub>s=1.
 
 A 'result_fits.fits' file is our result SL model which obtains convergence and model redshift values.
 'result_fits.fits' file has a size of (140x140 + alpha), where alpha is the number of model redshifts.
