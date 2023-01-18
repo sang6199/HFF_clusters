@@ -3,7 +3,7 @@ from Function import cos_z
 from load_paramter import strong_lensing_file, cluster_z, x1, y1, x2, y2, margin, kapmap_size
 
 kappamap_size = kapmap_size
-strong_lensing_data = np.loadtxt(strong_lensing_file, usecols=(1, 2, 3, 4, 5)).T
+strong_lensing_data = np.loadtxt(strong_lensing_file, usecols=(1, 2, 3, 4)).T
 strong_image_index = np.loadtxt(strong_lensing_file, usecols=0, dtype=str)
 
 #load data from strong_lensing_data_file
