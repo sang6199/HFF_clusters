@@ -1,4 +1,4 @@
-strong_lensing_file = 'A2744_catalog.txt'
+strong_lensing_file = '../A2744_catalog.txt'
 interpol_size = 2000
 cluster_z = 0.308
 x1 = 0
