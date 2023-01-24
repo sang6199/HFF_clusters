@@ -21,4 +21,4 @@ A 'deflection_angle_w_header.fits' file is our result deflection angle map (100x
 A 'catalog.txt' file is the catalog file for SL reconstruction in pixel scale.  
 
 
-For more details, please refer readers to 'arXiv:xxxx.xxxxx' (We submit our work to ApJ and arXiv).
+For more details, please refer readers to 'arXiv:2301.08765' (We submit our work to ApJ and arXiv).
