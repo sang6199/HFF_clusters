@@ -22,3 +22,4 @@ A 'catalog.txt' file is the catalog file for SL reconstruction in pixel scale.
 
 
 For more details, please refer readers to 'arXiv:2301.08765' (We submit our work to ApJ and arXiv).
+* We found errors in WCS for fits files and re-upload fixed files on 2023-01-27.
