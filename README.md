@@ -1,25 +1,25 @@
-Strong lensing modeling of the six Hubble Frontier Fields clusters 
+Strong lensing mass reconstruction of the six Hubble Frontier Fields clusters 
 ==================================================================
 
-Code files for evaluating multiple image scatters
+Codes for evaluating multiple image scatters
 --------------------------------------------
-A code file named 'eval_source_scatter.py' generates the source plane scatters for multiple images.
+The code "eval_source_scatter.py" generates the source plane scatters for multiple images.
 
-In a folder named 'Image_plane_scatters', there is the code for computing image plane scatters for multiple images.  
-A 'lens_rms.py' is the code to find the location of the multiple images in the image plane.  
-A 'plot_result.py' is the code to plot the result rms scatters.  
-We upload our results and code for computing scatters in both the source and the image planes.  
+In the folder "Image_plane_scatters", there are codes for computing image plane scatters.  
+"lens_rms.py": to find the location of the multiple images in the image plane.  
+"plot_result.py": to plot the result rms scatters.  
+We uploaded our results and code for computing scatters in both the source and the image planes.  
 
-Result files from the MARS algorithm
+Results from the MARS algorithm
 --------------------------------------------
 In each folder, there are 'result_fits.fits', 'resut_kappa_w_header.fits', 'deflection_angle_w_header.fits', and 'catalog.txt' files.  
 All kappa and deflection angle maps are scaled to D<sub>ds</sub>/D<sub>s</sub>= 1.  
 
-A 'result_fits.fits' file is our result SL model which obtains convergence and model redshift values. The 'result_fits.fits' file has a size of (140x140 + alpha), where alpha is the number of model redshifts.  
-A 'result_kappa_w_header.fits' file is our result SL kappa map (100x100).    
-A 'deflection_angle_w_header.fits' file is our result deflection angle map (100x100) in the arcsecond scale.   
-A 'catalog.txt' file is the catalog file for SL reconstruction in pixel scale.  
+"result_fits.fits" contains all parameters produced by MARS and has a size of (140x140 + alpha), where alpha is the number of model redshifts.  
+"result_kappa_w_header.fits" is the 100x100 convergence map.    
+"deflection_angle_w_header.fits" is the 100x100 deflection angle map in the unit of arc second.   
+"catalog.txt" is the multiple image catalog. The positions are given in pixel unit.  
 
 
-For more details, please refer readers to 'arXiv:2301.08765' (We submit our work to ApJ and arXiv).
-* We found errors in WCS for fits files and re-upload fixed files on 2023-01-27.
+For more details, readers are referfed to arXiv:2301.08765. Also, feel free to contact us (sang6199@yonsei.ac.kr) if you have any questions.  
+* We found errors in WCS for the fits files and re-uploaded corrected files on 2023-01-27. We thank Jori Liesenborgs for pointing this out.
