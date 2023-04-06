@@ -2,13 +2,13 @@ import numpy as np
 from Function import conv_def_angle, kernel_def, calc_beta, update_redshift
 from scipy.optimize import minimize
 import scipy.ndimage as ndimage
-from load_paramter import padding, kapmap_size, margin, free_param_redshift_source, cluster_z, core_num
+from load_parameter import padding, kapmap_size, margin, free_param_redshift_source, cluster_z
 from load_preprocessing import galaxy_m_w, galaxy_m_x, galaxy_m_y, max_m_source, strong_source_number, source_number_image
 import astropy.io.fits
 import parmap
 
 kappamap_size = kapmap_size + 2*margin
-result_fits = np.array(astropy.io.fits.open('../result_fits.fits')[0].data)
+result_fits = np.array(astropy.io.fits.open('./result_fits.fits')[0].data)
 result_kappa = result_fits[:kappamap_size**2].reshape(kappamap_size, kappamap_size)
 result_redshift = result_fits[kappamap_size**2:]
 kernel_def_angle = kernel_def(padding, kapmap_size+margin*2)
@@ -46,7 +46,7 @@ def mass_min(input_coord, beta1=None, beta2=None, cosmo_weight=None):
     return total_chi2
 
 
-N = 600
+N = 200
 rng1 = np.random.RandomState(seed=12345)
 input_coord_random = np.random.randint(margin, high=kapmap_size+margin, size=(N,2))
 
@@ -66,7 +66,7 @@ def relens(count):
         result_values.append(result_array.tolist())
     np.save('./lens_rms_result/multiple_image_{}.npy'.format(K), np.array(result_values))
 
-
 data = range(max_m_source)
-parmap.map(relens, data, pm_pbar=True, pm_processes=core_num)
+if __name__ == '__main__':
+    parmap.map(relens, data, pm_pbar=True, pm_processes=30)
 
