@@ -1,0 +1,29 @@
+bg_galaxy_file = None
+strong_lensing_file = 'MACSJ0717_silver_catalog_change_knot_length_final.txt'
+interpol_size = 4000
+sigma = 0.6
+folder_path = './result_file100_0717_knot1'
+result_fits = '/result_fits.fits'
+input_fits = folder_path + '/initial_fits.fits'
+cluster_z = 0.545
+effect_source_red = 1
+x1 = 0
+y1 = 0
+x2 = x1 + interpol_size
+y2 = y1 + interpol_size
+r_weight = 1
+g_weight = 0
+m_weight = 1
+prior_reduce = 0.995
+kapmap_size = 100
+margin = 20
+padding = int(2*margin + kapmap_size)
+initial_kappa = 0.5
+lower_kappa, upper_kappa = 0.01, 10
+learn_rate = 5e-3
+upper_red = 15
+free_param_redshift_source =  5,  8 ,16, 17, 18, 20, 23, 25, 33, 34, 36, 37, 39, 45, 52, 56, 57, 65, 66, 67, 69, 76, 79, 80
+
+#import torch
+#device = torch.device('cpu')
+#device = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
