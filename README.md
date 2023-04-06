@@ -23,3 +23,4 @@ All kappa and deflection angle maps are scaled to D<sub>ds</sub>/D<sub>s</sub>= 
 
 For more details, readers are referfed to arXiv:2301.08765. Also, feel free to contact us (sang6199@yonsei.ac.kr) if you have any questions.  
 * We found errors in WCS for the fits files and re-uploaded corrected files on 2023-01-27. We thank Jori Liesenborgs for pointing this out.
+* We updated files on 2023-04-06.
